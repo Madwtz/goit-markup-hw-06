@@ -364,63 +364,90 @@
       </section>
     </main>
     <footer class="footer-section">
-      <nav>
-        <a href="webstudio.html"
-          ><span class="item-web-span">Web</span>Studio</a
-        >
-      </nav>
-      <address class="footer-address">
-        <ul>
-          <li>
-            <a href="https://goo.gl/maps/jNuW9V26wf5GWSnc8" target="_blank">
-              694 Park Ave, NY 10064, USA
-            </a>
-          </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+12127724140">+1 212-772-4140 </a></li>
-        </ul>
-      </address>
-
+      <div class="footer-nav-address">
+        <nav>
+          <a href="webstudio.html"
+            ><span class="item-web-span">Web</span>Studio</a
+          >
+        </nav>
+        <address class="footer-address">
+          <ul>
+            <li>
+              <a href="https://goo.gl/maps/jNuW9V26wf5GWSnc8" target="_blank">
+                694 Park Ave, NY 10064, USA
+              </a>
+            </li>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+12127724140">+1 212-772-4140 </a></li>
+          </ul>
+        </address>
+      </div>
       <div class="container container-find-us">
         <div class="container-find-us">
-          <h5>Find us on</h5>
-          <div class="icons-list">
-            <a
-              href="https://www.instagram.com/"
-              class="icon"
-              aria-label="Instagram"
-            >
-              <svg>
-                <use href="icons.svg/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-            <a
-              href="https://www.twitter.com/"
-              class="icon"
-              aria-label="Twitter"
-            >
-              <svg>
-                <use href="icons.svg/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-            <a
-              href="https://www.facebook.com/"
-              class="icon"
-              aria-label="Facebook"
-            >
-              <svg>
-                <use href="icons.svg/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/"
-              class="icon"
-              aria-label="Linkedin"
-            >
-              <svg>
-                <use href="icons.svg/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
+          <div class="container-title-icons">
+            <h5>Find us on</h5>
+            <div class="icons-list footer-icon-list">
+              <a
+                href="https://www.instagram.com/"
+                class="icon"
+                aria-label="Instagram"
+              >
+                <svg>
+                  <use href="icons.svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.twitter.com/"
+                class="icon"
+                aria-label="Twitter"
+              >
+                <svg>
+                  <use href="icons.svg/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                class="icon"
+                aria-label="Facebook"
+              >
+                <svg>
+                  <use href="icons.svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                class="icon"
+                aria-label="Linkedin"
+              >
+                <svg>
+                  <use href="icons.svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="subscribe">
+            <h3 class="subscribe-title">Subscribe to the newsletter</h3>
+            <form method="GET" class="form-subscribe">
+              <label for="mail" class="subscribe-subtitle">
+                <p>Subscribe to the newsletter</p>
+              </label>
+              <div class="subscribe-field">
+                <input
+                  class="subscribe-input"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder="E-mail"
+                  autocomplete="email"
+                />
+                <button type="submit" class="subscribe-button">
+                  Subscribe
+                  <svg class="subscribe-icon">
+                    <use href="./icons.svg/icon send.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

@@ -33,6 +33,7 @@ ul {
 a {
   transition: color var(--transition);
 }
+
 .link {
   position: relative;
   transition: color var(--transition);
@@ -361,6 +362,7 @@ section.general-section h1 {
   align-content: stretch;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-left: -10px;
 }
 .footer-address {
   padding-left: 215px;
@@ -427,6 +429,113 @@ a {
   border-radius: 4px;
   border: 1px solid #afb1b8;
 }
+.container-find-us {
+  display: flex;
+}
+.container-title-icons {
+  margin-left: -321px;
+}
+.footer-nav-address {
+  display: flex;
+  flex-direction: column;
+}
+/*Subscribe styles */
+
+.form-subscribe {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-left: 93px;
+  margin-top: 16px;
+}
+
+.subscribe-subtitle {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  color: var(--main-color);
+  margin-bottom: 20px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.subscribe-button {
+  margin-left: 12px;
+  padding: 10px 77px 10px 43px;
+
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  background-color: var(--second-color);
+  color: var(--main-color);
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--second-color);
+}
+
+.subscribe-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 100px;
+  vertical-align: middle;
+  fill: var(--main-color);
+  position: relative;
+  margin-top: -62px;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  font-size: 16px;
+
+  background-color: rgba(33, 150, 243, 0);
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+  outline: none;
+}
+
+.subscribe-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subscribe-title {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  visibility: hidden;
+  position: absolute;
+}
 
 /*Modal */
 
@@ -434,8 +543,8 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,7 +557,7 @@ a {
   width: 528px;
   height: 581px;
   border-radius: 4px;
-  background: #fff;
+
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   position: relative;
