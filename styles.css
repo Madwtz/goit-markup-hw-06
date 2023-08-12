@@ -434,6 +434,7 @@ a {
 }
 .container-title-icons {
   margin-left: -321px;
+  margin-top: -10px;
 }
 .footer-nav-address {
   display: flex;
@@ -447,6 +448,9 @@ a {
   flex-direction: column;
   margin-left: 93px;
   margin-top: 16px;
+}
+.subscribe {
+  margin-top: -17px;
 }
 
 .subscribe-subtitle {
